@@ -1,0 +1,82 @@
+<div class="flex items-center justify-between fixed top-0 bg-black w-full">
+  <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation" aria-controls="drawer-navigation" type="button" class="inline-flex items-center p-2 mt-2 me-3 fixed end-0 text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <span class="sr-only">Open sidebar</span>
+    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+    </svg>
+  </button>
+  <div class="flex items-center gap-[10px] lg:hidden w-full m-4">
+    <div class="w-[40px]">
+      <img src="assets/Frame 2.png" alt="logo" class="w-full">
+    </div>
+    <div>
+      <h2 class="text-[#fff] capitalize font-medium leading-[33px]">Remon Tarek</h2>
+    </div>
+  </div>
+</div>
+<div class="block bg-black">
+  <aside id="drawer-navigation" class="bg-black fixed top-0 bottom-0 left-0 z-40 px-[24px] pt-[20px] border-r-2 border-[#22262F] rounded-t-[16px] rounded-b-[16px] h-screen transition-transform -translate-x-full xl:translate-x-0 " aria-label="Sidebar">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-black">
+      <div class="flex items-center gap-[18px]">
+        <div class="w-[65px]">
+          <img src="assets/Frame 2.png" alt="logo" >
+        </div>
+        <div class="px-0 pt-[8px] pb-[16px]">
+          <h2 class="text-[#fff] capitalize text-[20px] font-medium leading-[33px]">Remon Tarek</h2>
+          <span class="text-[#A7A7A7] text-[18px] leading-5 capitalize">ui/ux designer</span>
+          <div class="vip h-[1px] mt-[16px]"></div>
+        </div>
+      </div>
+       <ul class="space-y-2 font-medium mt-[46px] text-[#A7A7A7]">
+          <li class="p-[16px] rounded-[16px] border-[1px] border-transparent " routerLink="home" routerLinkActive="text-[#FEFEFE] bg-[#13161B]">
+             <a  class="flex items-center cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M1.99902 12.2041C1.99902 9.91512 1.99902 8.77112 2.51902 7.82312C3.03702 6.87412 3.98602 6.28612 5.88302 5.10812L7.88302 3.86712C9.88802 2.62212 10.891 2.00012 11.999 2.00012C13.107 2.00012 14.109 2.62212 16.115 3.86712L18.115 5.10812C20.012 6.28612 20.961 6.87412 21.48 7.82312C21.999 8.77212 21.999 9.91512 21.999 12.2031V13.7251C21.999 17.6251 21.999 19.5761 20.827 20.7881C19.655 22.0001 17.77 22.0001 13.999 22.0001H9.99902C6.22802 22.0001 4.34202 22.0001 3.17102 20.7881C2.00002 19.5761 1.99902 17.6261 1.99902 13.7251V12.2041Z" stroke="#FEFEFE" stroke-width="1.5"/>
+                <path d="M11.999 15.0001V18.0001" stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+                <span class="ms-3 text-[18px] capitalize  leading-4 font-normal">Home</span>
+             </a>
+          </li>
+          <li class="p-[16px] rounded-[16px] border-transparent border-[1px] " routerLink="project" routerLinkActive="text-[#FEFEFE] bg-[#13161B]">
+             <a  class="flex items-center  cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M10 21V3M3 10H21M5.4 3H18.6C19.2365 3 19.847 3.25286 20.2971 3.70294C20.7471 4.15303 21 4.76348 21 5.4V18.6C21 19.2365 20.7471 19.847 20.2971 20.2971C19.847 20.7471 19.2365 21 18.6 21H5.4C4.76348 21 4.15303 20.7471 3.70294 20.2971C3.25286 19.847 3 19.2365 3 18.6V5.4C3 5.08483 3.06208 4.77274 3.18269 4.48156C3.3033 4.19038 3.48008 3.9258 3.70294 3.70294C4.15303 3.25286 4.76348 3 5.4 3Z" stroke="#A7A7A7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                <span class="ms-3 text-[18px] capitalize  leading-4 font-normal">projects</span>
+             </a>
+          </li>
+          <li class="p-[16px] rounded-[16px] border-transparent border-[1px]" routerLink="experience" routerLinkActive="text-[#FEFEFE] bg-[#13161B]">
+             <a  class="flex items-center  cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_85_2423)">
+                  <path d="M19.5775 7.03813C17.9808 5.72131 15.9759 5.00078 13.9062 5H13.75V6.25H13.9062C15.5363 6.25 17.1281 6.77312 18.435 7.7325C18.0185 8.7661 17.3801 9.69566 16.5649 10.4555C15.7498 11.2154 14.7778 11.787 13.7175 12.13C13.7392 11.8779 13.75 11.6237 13.75 11.3675C13.75 6.47875 9.77187 2.5 4.8825 2.5C4.30187 2.5 3.7225 2.55625 3.15937 2.6675L2.74875 2.74875L2.6675 3.15937C2.55604 3.72698 2.49994 4.30406 2.5 4.8825C2.5 7.46 3.6125 9.77688 5.37375 11.3988C5.12958 12.2132 5.00371 13.0585 5 13.9087L5.00063 13.9094C5.00198 15.9781 5.72248 17.9821 7.03875 19.5781L7.31313 19.9094L7.72062 19.7719C9.13337 19.2954 10.4031 18.4702 11.4122 17.3727C12.4213 16.2752 13.1373 14.9408 13.4937 13.4931C14.9413 13.1366 16.2756 12.4206 17.373 11.4115C18.4704 10.4023 19.2955 9.13267 19.7719 7.72L19.9094 7.3125L19.5775 7.03813ZM7.7325 18.435C6.77008 17.1213 6.25085 15.5354 6.25 13.9069C6.25 13.3369 6.32063 12.7844 6.43938 12.2494C8.11239 13.3755 10.121 13.8937 12.13 13.7175C11.787 14.7778 11.2154 15.7498 10.4555 16.5649C9.69566 17.3801 8.7661 18.0185 7.7325 18.435ZM12.4263 12.4269C12.0792 12.4752 11.7262 12.4996 11.3675 12.5C9.67062 12.5 8.10625 11.935 6.83813 10.9925C7.3725 9.69989 8.24674 8.576 9.36812 7.74L8.56812 6.78375C7.40553 7.66001 6.47459 8.807 5.85625 10.125C5.06311 9.29655 4.4681 8.29907 4.11595 7.20756C3.76381 6.11604 3.66369 4.9589 3.82313 3.82313C4.17408 3.77375 4.52809 3.74931 4.8825 3.75C9.0825 3.75 12.5 7.1675 12.5 11.3675C12.5 11.7267 12.475 12.0798 12.4263 12.4269Z" fill="#A7A7A7"/>
+                  <path d="M12.5 2.5C13.1904 2.5 13.75 1.94036 13.75 1.25C13.75 0.559644 13.1904 0 12.5 0C11.8096 0 11.25 0.559644 11.25 1.25C11.25 1.94036 11.8096 2.5 12.5 2.5Z" fill="#A7A7A7"/>
+                  <path d="M16.875 17.5C17.5654 17.5 18.125 16.9404 18.125 16.25C18.125 15.5596 17.5654 15 16.875 15C16.1846 15 15.625 15.5596 15.625 16.25C15.625 16.9404 16.1846 17.5 16.875 17.5Z" fill="#A7A7A7"/>
+                  <path d="M1.25 13.75C1.94036 13.75 2.5 13.1904 2.5 12.5C2.5 11.8096 1.94036 11.25 1.25 11.25C0.559644 11.25 0 11.8096 0 12.5C0 13.1904 0.559644 13.75 1.25 13.75Z" fill="#A7A7A7"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_85_2423">
+                    <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+                <span class="ms-3 text-[18px] capitalize  leading-4 font-normal">Experience</span>
+             </a>
+          </li>
+          <li class="p-[16px] rounded-[16px] border-transparent border-[1px]" routerLink="about"  routerLinkActive="text-[#FEFEFE] bg-[#13161B]">
+             <a  class="flex items-center  cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M11.999 2.00012C6.47602 2.00012 1.99902 6.47712 1.99902 12.0001C1.99902 17.5231 6.47602 22.0001 11.999 22.0001C17.522 22.0001 21.999 17.5231 21.999 12.0001C21.999 6.47712 17.522 2.00012 11.999 2.00012Z" stroke="#A7A7A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.27051 18.3461C4.27051 18.3461 6.49951 15.5001 11.9995 15.5001C17.4995 15.5001 19.7295 18.3461 19.7295 18.3461M11.9995 12.0001C12.7952 12.0001 13.5582 11.6841 14.1208 11.1214C14.6834 10.5588 14.9995 9.79577 14.9995 9.00012C14.9995 8.20447 14.6834 7.44141 14.1208 6.8788C13.5582 6.31619 12.7952 6.00012 11.9995 6.00012C11.2039 6.00012 10.4408 6.31619 9.87819 6.8788C9.31558 7.44141 8.99951 8.20447 8.99951 9.00012C8.99951 9.79577 9.31558 10.5588 9.87819 11.1214C10.4408 11.6841 11.2039 12.0001 11.9995 12.0001Z" stroke="#A7A7A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+                <span class="ms-3 text-[18px] capitalize  leading-4 font-normal">about me</span>
+             </a>
+          </li>
+       </ul>
+       <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="lg:hidden  text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+    </div>
+  </aside>
+</div>
