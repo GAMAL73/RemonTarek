@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/about",
+    "/AppleVesion",
+    "/experience",
+    "/fitness",
+    "/hire",
+    "/home",
+    "/madrid",
+    "/project",
+    "/roomiz"
+  ]
+}
